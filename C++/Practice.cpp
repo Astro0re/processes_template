@@ -1,4 +1,7 @@
 #include <iostream>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -47,4 +50,23 @@ int temp() {
     double conv = (F - 32) / 1.8;
     cout << "Temprature in Celcius:" << conv << endl ;
     return 0;
+}
+
+// List maker 
+
+int list(){
+    cout << "What's cooking good looking, make a list of goals ";
+    string goals;
+    cin >> goals;
+    cout << "Good Looking Goals:" << endl <<goals ;
+    return 0;
+}
+
+// Random number generator
+
+int RandNum(){
+    int srand(time(0)); 
+    int num_1 = rand();
+    cout << "Random number of the moment is:" << num_1;
+    return 0; 
 }
